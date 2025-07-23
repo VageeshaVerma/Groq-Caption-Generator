@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Caption Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <button id="theme-toggle">🌙 Dark Mode</button>
+  <div class="container">
+  <h1>✨ AI Caption Generator</h1>
+  <p class="subtext">Upload an image and describe it to get a caption.</p>
+
+  <div class="input-box">
+    <input type="file" id="image-input" accept="image/*">
+    <img id="image-preview" src="" alt="" style="max-width: 100%; margin-top: 10px; display: none;" />
+    <input type="text" id="prompt" placeholder="Describe your image (e.g., girl laughing with coffee)" />
+    <button onclick="generateCaption()">Generate</button>
+  </div>
+
+  <div id="output" class="output-box"></div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

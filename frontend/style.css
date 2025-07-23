@@ -1,0 +1,122 @@
+:root {
+  --bg-color: #f9fafb;
+  --text-color: #111827;
+  --card-bg: #ffffff;
+  --subtext-color: #6b7280;
+  --button-bg: #6366f1;
+  --button-hover: #4f46e5;
+  --output-bg: #f3f4f6;
+}
+
+body.dark-mode {
+  --bg-color: #1e1e2f;
+  --text-color: #f3f4f6;
+  --card-bg: #2a2a40;
+  --subtext-color: #a3a3b5;
+  --button-bg: #8b5cf6;
+  --button-hover: #7c3aed;
+  --output-bg: #383852;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.container {
+  background-color: var(--card-bg);
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.subtext {
+  color: var(--subtext-color);
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"] {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: var(--button-bg);
+}
+
+button {
+  padding: 12px;
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+.output-box {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: var(--output-bg);
+  border-radius: 12px;
+  font-size: 1.05rem;
+  white-space: pre-wrap;
+  min-height: 50px;
+  transition: all 0.3s ease;
+}
+
+/* Dark Mode Toggle */
+#theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+
