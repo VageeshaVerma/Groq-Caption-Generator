@@ -2,6 +2,13 @@
 
 A modern, AI-powered tool to generate creative social media captions using [LLaMA 3 via Groq API].
 
+## 🚀 Live Demo
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR-BADGE-ID/deploy-status)](https://capgenai.netlify.app)
+
+👉 **Try it here**: [https://capgenai.netlify.app](https://capgenai.netlify.app)
+
+
 ## 🚀 Features
 
 - 🎯 Generate captions based on text input
